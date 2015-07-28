@@ -1,0 +1,420 @@
+<!--
+Cameron King
+Template URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Cameron King</title>
+		<link href="web/css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="web/js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="web/css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="web/js/move-top.js"></script>
+		<script type="text/javascript" src="web/js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<!----- webfonts ------>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic|Open+Sans:300italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+		<!----- webfonts ------>
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<div class="main-header">
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							  <!--- <img src="web/images/LogoCool.png" alt=""> --->
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Home </a></li>
+								<li><a href="#about" class="scroll">About Me</a></li>
+								<li><a href="#services" class="scroll">At a Glance</a></li>
+								<li><a href="#portfolio" class="scroll">Projects</a></li>
+								<li><a href="#team" class="scroll">Blog</a></li>
+								<li><a href="#contact" class="scroll">Contact Me</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="web/images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		<!----- //End-header---->
+		<!----start-slider-script---->
+			<script src="web/js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 700,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+            <style>
+                h1 {
+                    color: darkseagreen;
+                }
+                p { 
+                    color:aqua;
+                }
+            </style>
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			        	<div class="tittle-head">
+			        		<h1>Welcome to Cameron King</h1> 
+			          		<p> Athlete </p>
+			          		<div class="learn-button">
+			          			<a class="slide-btn" href="#services" class="scroll">Learn More</a>
+			          		</div>
+			          	</div>
+			        </li>
+			        <li>
+			        <div class="tittle-head">
+			        		<h1>Welcome to Cameron King</h1>
+			          		<p>  Artist</p>
+			          		<div class="learn-button">
+			          			<a class="slide-btn" href="#services" class="scroll">Learn More</a>
+			          		</div>
+			          	</div>
+			        </li>
+			        <li>
+			         <div class="tittle-head">
+			        		<h1>Welcome to Cameron King</h1>
+			          		<p> Musician </p>
+			          		<div class="learn-button">
+			          			<a class="slide-btn" href="#services" class="scroll">Learn More</a>
+			          		</div>
+			          	</div>
+			        </li>
+                     <li>
+			         <div class="tittle-head">
+			        		<h1>Welcome to Cameron King</h1>
+			          		<p>  Tinkerer</p>
+			          		<div class="learn-button">
+			          			<a class="slide-btn" href="#services" class="scroll">Learn More</a>
+			          		</div>
+			          	</div>
+			        </li>
+                     <li>
+			         <div class="tittle-head">
+			        		<h1>Welcome to Cameron King</h1>
+			          		<p> Innovator </p>
+			          		<div class="learn-button">
+			          			<a class="slide-btn" href="#services" class="scroll">Learn More</a>
+			          		</div>
+			          	</div>
+			      </ul>
+			    </div> 
+			    <div class="clearfix"> </div>
+			    </div>
+        
+			<!----- //End-slider---->
+			<div id="about" class="about">
+				<div class="container">
+					<div class="about-head">
+						<h3>About Me</h3>
+						<span>I'm 17 years old, a High School Senior</span>
+						<p>My name is Cameron Ythan King. I attend school at Little Red Schoolhouse and Elisabeth Irwin High School (LREI), located in SoHo, New York. I am an A- student and a Prep for Prep and All Star Code member. I live in Brooklyn, New York.  I consider myself an athelte, a musician, a comedian, an artist, a designer and I am an aspiring Computer Engineer. In addition to playing three Varisty Sports( Soccer, Basketball, and Track and Field) and playing four instruments ( Piano, Drums, Trumpet, and Baritone Horn), I paint and I code. For example, I made this website on my own. I recently represented LREI at the White Privilege Conference in Louisville, Kentucky.  </p>
+					</div>
+				</div>
+				
+			</div>
+			<!----- //End-about---->
+			<div id="services" class="services">
+       		<div class="container">
+       		   <div class="gallery-head text-center">
+				  <h3>At a Glance</h3>
+				  <p>What I do?.</p>
+			    </div>
+       			<div class="row text-center feature">
+       				<div class="col-md-4 service_grid">
+       					<img src="web/images/glyphicons/png/glyphicons-19-note.png" alt=""> <img/>
+       					<h3>Play Music</h3>
+       					<p>I play four instruments and I rap and make beats in GarageBand and Logic Pro. I play Piano, Drums, Trumpet, and Baritone Horn. I lead the trumpet section of the Jazz Band, and low brass section of the Wind Ensemble. </p>
+       				</div>
+       				<div class="col-md-4 service_grid">
+       				<img src="web/images/glyphicons/png/glyphicons-463-basketball.png" alt=""> <img/>
+       					<h3>Play Sports</h3>
+       					<p> I play Basketball, Soccer, and Track and Field. I was JV Captain of my school's basketball team in 2013, and now I am the starting Center for Varisty Basketball (2014-2015). I am a striker/forward for Varsity Soceer. I am Field Captain of the Spring Track Team; I am the three year consequtive champion of Shot Put. I run the 100m and 200m sprints, as well as, jump the triple and long jump events. </p>
+       				</div>
+       				<div class="col-md-4 service_grid">
+       					<img src="web/images/glyphicons/png/glyphicons-119-embed-close.png" alt=""> <img/>
+       					<h3>Build, Code and Design</h3>
+       					<p> I have built various things, tinkered with many electornics. I use Makey Makeys, Lego MindStorms, Arduino, and robotic Finches. I design in Photoshop and Illustrator. I edit videos in Final Cut Pro. I have understanding of Python, C, HTML, CSS and Javascript </p>
+       				</div>
+       			</div>
+       		</div>
+       	</div>
+	 <!---//End-services----->
+	 <div class="portfolio">
+	 	<div class="container">
+	 		<div class="potrfolio-head">
+		 		<h2>Here is my Resume</h2>
+				<a class="prt-btn" href="https://drive.google.com/file/d/0B0TOn93JFPTRS19MU0hyVnl3Rzg/view?usp=sharing">Click Here to Download PDF!</a> 
+			 </div>
+		</div>
+	</div>
+ 	<div id="portfolio" class="potrfolio-content">
+ 		<div class="container">
+ 			<div class="port-head">
+ 				<h3>My Projects</h3>
+ 				<p> Art + Code </p>
+ 			</div>
+			 	<div id="portfoliolist">
+					<div class="portfolio-grids">
+						<div class="portfolio-wrapper">		
+							<div class="view second-effect">
+								<img src="web/images/p-1.png" />
+								  <div class="mask">
+										<a href="http://www.allstar.codes/cameron" class="info">Find the Blob </a>
+								  </div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio-grids">
+						<div class="portfolio-wrapper">		
+							<div class="view second-effect">
+								<img src="web/images/p-2.png" />
+									 <div class="mask">
+										<a href="#" class="info"> "Obamafy"</a>
+									 </div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio-grids">
+						<div class="portfolio-wrapper">		
+							<div class="view second-effect">
+								<img src="web/images/p-3.png" />
+								  <div class="mask">
+									 <a href="#" class="info"> Home-made Calculator</a>
+								 </div>
+							</div>
+						</div>
+					</div>	
+					<div class="portfolio-grids">
+						<div class="portfolio-wrapper">		
+							<div class="view second-effect">
+							 <img src="web/images/p-4.png" />
+								<div class="mask">
+									<a href="#" class="info">"PaintShop" program made from scratch</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-grids">
+						<div class="portfolio-wrapper">		
+							<div class="view second-effect">
+								<img src="web/images/p-5.jpeg" />
+								 <div class="mask">
+									<a href="#" class="info">Arduino Instrument</a>
+								</div>
+							</div>
+						</div>
+					</div>	
+                    <div class="portfolio-grids">
+						<div class="portfolio-wrapper">		
+							<div class="view second-effect">
+								<img src="web/images/p-7.png" />
+									 <div class="mask">
+										<a href="#" class="info"> "ESPN MLB Score Keeper"</a>
+									 </div>
+							</div>
+						</div>
+					</div>
+                    		<div class="portfolio-grids">
+						<div class="portfolio-wrapper">		
+							<div class="view second-effect">
+								<img src="web/images/p-6.png" />
+								  <div class="mask">
+										<a href="http://www.allstar.codes/cameron" class="info">Electric Skateboard </a>
+								  </div>
+							</div>
+						</div>
+					</div>	
+                    	<div class="portfolio-grids">
+						<div class="portfolio-wrapper">		
+							<div class="view second-effect">
+								<img src="web/images/p-8.png" />
+								  <div class="mask">
+										<a href="http://www.allstar.codes/cameron" class="info">"FInchFA" ( a game of soccer using Finch robots controlled by using custom designed gloves to move forward, backward, left and right) </a>
+								  </div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			 </div>
+	 	 </div>
+	 	  <!---//End-portfolio----->
+	 	    <!---//End-portfolio----->
+	 	 <div id="team" class="team">
+	 	 	<div class="container">
+	 	 		<div class="team-head">
+	 	 			<h3>More Projects </h3>
+	 	 		</div>
+       			<div class="row text-center teams">
+       				<div class="col-md-4 team_grid">
+       					<div class="view2 second-effect2">
+							 <img src="web/images/tm-1.png" />
+								<div class="mask">
+									<a href="#" class="info">Read More</a>
+								</div>
+							</div>
+       					<h3>S.M.A.R.T. Alarm Clock</h3>
+       					<p>I created an alarm clock that connected with my house's wifi to automatically go off and create alarms using the Google Calendar api. This was done using an Arduino Yun, a USB speaker, and a TFT touch screen sheild. The device could also set an alarm via email or sms text message.  </p>
+       				</div>
+       				<div class="col-md-4 team_grid">
+       				<div class="view2 second-effect2">
+							 <img src="web/images/tm-2.png" />
+								<div class="mask">
+									<a href="#" class="info">Read More</a>
+								</div>
+							</div>
+       					<h3>Lego Mindstorms Projects</h3>
+       					<p>Over the past of a few years, I've built many robots using the Lego Mindstorms products. I've made a sodoku solving robot, many variants on the classic line follow, a segway, a guitar, remote control car, and also a rubik's cube solving robot.</p>
+       				</div>
+       				<div class="col-md-4 team_grid">
+       					<div class="view2 second-effect2">
+							 <img src="web/images/tm-3.png" />
+								<div class="mask">
+									<a href="#" class="info">Read More</a>
+								</div>
+							</div>
+       					<h3>Space Invaders</h3>
+       					<p> I built my very first video game from scratch, this summer. It is a rendition of the classic game, "Space Invaders". It was programmed in Python using the Calico IDE. It took 4 days, and has some bugs. </p>
+       				</div>
+       			</div>
+       		</div>
+	 	 </div>
+	 	 <!---//End-team-
+	 	  <div class="contact">
+	 	  	<div class="container">
+	 		<div class="contact-head">
+		 		<h3>It'still free!</h3>
+				 <a class="con-btn" href="#">Just download it!</a>
+---->
+			 </div>
+			</div>
+	 	  </div>
+	 	  <div id="contact" class="feedback">
+	 	   		<div class="container">
+	 	   			<div class="feed-head">
+	 	 			<h3>Contact </h3>
+ 					<p>Let's keep in touch!</p>
+	 	 		</div>
+	 	 		<div class="feed-contact">
+				 	 			<div class="col-md-8 contact-form">
+											<form>
+												<input type="text" class="textbox" value="Name" onfocus="this.value = '';" onblur="if (this.value = 'Name') {this.value = 'Name';}">
+												<input type="text" class="textbox" value="E-mail" onfocus="this.value = '';" onblur="if (this.value ='E-mail') {this.value = 'E-mail';}">
+												<textarea value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+												<input type="submit" value="Send a message" >
+
+											</form>
+                                  
+                                    
+
+
+								</div>
+								<div class="col-md-4 address"> 
+										<h4>Cameron King </h4>
+										<p>Brooklyn, New York</p>
+										<p> </p><br>
+										<p>1 (718)-450-4226 </p>
+										<p><a href="#" >16cameronk@lrei.org</a></p>
+									<div class="footer-icons">
+										<ul class="soc_icons unstyled-list list-inline">
+											<li><a href="http://www.facebook.com/cyking1233"><i class="icon_1"></i></a></li>
+											<li><a href="http://www.instagram.com/cameron.y.king"><i class="icon_2"></i></a></li>
+											<li><a href="#"><i class="icon_3"></i></a></li>
+											<li><a href="#"><i class="icon_4"></i></a></li>
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+				<div class="footer">
+						<div class="container">
+							<div class="logo2">
+								   <img src="web/images/LogoCool.png" alt="">
+							</div>
+							<div class="copy-right">
+								<p>&copy; 2015  All rights  Reserved | Cameron King &nbsp;<a href="http://w3layouts.com">W3Layouts</a></p>
+							</div>								
+							<div class="clearfix"> </div>
+						</div>	
+				</div>	
+
+				<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</body>
+</html>
