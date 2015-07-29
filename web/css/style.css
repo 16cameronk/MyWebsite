@@ -1,6 +1,5 @@
 /*--
-Author: W3layouts
-Author URL: http://w3layouts.com
+Cameron King
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
@@ -503,7 +502,7 @@ i.icon3:hover{
 	font-size: 1em;
 	line-height: 1.7em;
 	width: 90%;
-	margin: 0.5em auto;
+	margin: 1.6em auto;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 }
@@ -515,7 +514,7 @@ i.icon3:hover{
 	color: #222222;
 	font-weight: 900;
 	font-size: 4em;
-	margin: 0;
+	margin: 1;
 	font-family: 'Lato', sans-serif;
 
 }
