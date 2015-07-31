@@ -1,5 +1,6 @@
 /*--
-Cameron King
+Author: W3layouts
+Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
@@ -40,6 +41,7 @@ body a{
 	display:block;
 }
 /* top-nav */
+.top-nav{ text-align: center }
 .top-nav:before,
 .top-nav:after {
     content: " ";
@@ -50,16 +52,16 @@ body a{
 }
 nav {
 	position: relative;
-	float: right;
+	float: center;
 }
 nav ul {
 	padding: 0;
-	float: right;
+	float: center;
 	margin: 1.2em 0;
 }
 nav li {
 	display: inline;
-	float: left;
+	float: center;
 	position:relative;
 	margin-left: 12px;
 }
@@ -154,10 +156,11 @@ nav a#pull {
 	}
 }
 /*----slider----*/
+
 .main-header{
-	background:rgb (0,0,0);
+	background:rgb(0,0,0);
 	background-size:cover;
-	min-height: 700px;
+	min-height: 700px;---->
 }
 #slider2,
 #slider3 {
@@ -502,7 +505,7 @@ i.icon3:hover{
 	font-size: 1em;
 	line-height: 1.7em;
 	width: 90%;
-	margin: 1.6em auto;
+	margin: 1.em auto;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 }
@@ -892,7 +895,7 @@ ul.soc_icons{
 	margin-top:0.8em;
 }
 .footer {
-	background: #333333;
+	background:rgb(0,0,0);
 	padding: 1em 0;
 }
 .copy-right p {
