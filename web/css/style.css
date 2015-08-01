@@ -158,9 +158,10 @@ nav a#pull {
 /*----slider----*/
 
 .main-header{
-	background:rgb(0,0,0);
+	 background:url(../images/bg1.jpg);
 	background-size:cover;
-	min-height: 700px;---->
+	min-height: 700px;
+}
 }
 #slider2,
 #slider3 {
